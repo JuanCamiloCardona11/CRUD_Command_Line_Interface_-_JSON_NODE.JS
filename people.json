@@ -1,0 +1,28 @@
+{
+   "people": [
+      {
+         "id": "234",
+         "name": "Cristian Morales",
+         "lastname": "Morales Villada",
+         "phoneNumber": "3247335",
+         "age": 23,
+         "height": 1.6
+      },
+      {
+         "id": "345",
+         "name": "andres",
+         "lastname": "Grisales Gonzalez",
+         "phoneNumber": "3307335",
+         "age": 22,
+         "height": 1.7
+      },
+      {
+         "id": "456",
+         "name": "Santiago",
+         "lastname": "Echeverry Amariles",
+         "phoneNumber": "4444444",
+         "age": 23,
+         "height": 1.82
+      }
+   ]
+}

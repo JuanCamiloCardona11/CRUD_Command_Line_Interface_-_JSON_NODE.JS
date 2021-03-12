@@ -71,16 +71,46 @@ yargs.command({
 //UPDATE (one person)
 yargs.command({
    command: "update",
-   describe: "This command updates one person and show by console it's new information",
-   builder: {
+   describe:"This command updates one person and show by console it's new information",
+   builder:{
       id: {
-         describe: "id",
+         describe: "identification",
          demandOption: true,
-         type: "string",
+         type:"string"   
+      },
+      newId:{
+         describe: "new identification",
+         demandOption: true,
+         type:"string"   
+      },
+      name: {
+         describe: "new name",
+         demandOption: true,
+         type:"string"
+      },
+      lastName:{ 
+         describe:"new last name",
+         demandOption: true,  
+         type: "string"
+      },
+      phoneNumber: {
+         describe:"new phone number",
+         demandOption: true,  
+         type: "string"
+      },
+      age: {
+         describe:"new age",
+         demandOption: true,  
+         type: "number"
+      },
+      height:{
+         describe:"new height",
+         demandOption: true,  
+         type: "number"
       }
    },
-   handler: function (argv) {
-      people.updatePerson(argv.id);
+   handler: function(argv){
+      people.updatePerson(argv.id, argv.newId, argv.name, argv.lastName, argv.phoneNumber, argv.age, argv.height);
    }
 });
 
@@ -96,7 +126,7 @@ yargs.command({
       }
    },
    handler: function (argv) {
-      people.removePerson(argv.id);
+      people.deletePerson(argv.id);
    }
 });
 
